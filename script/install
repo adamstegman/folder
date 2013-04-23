@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# == Install Chef
+
+CHEF_OMNIBUS_INSTALLER=https://www.opscode.com/chef/install.sh
+
+curl -L $CHEF_OMNIBUS_INSTALLER | bash
+
+# == Run installer
+
+chef-solo -j config/chef/solo.json -c config/chef/solo.rb
