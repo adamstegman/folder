@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+gem 'carrierwave'
+gem 'haml-rails'
 gem 'pg'
 gem 'rails', '~> 3.2.13'
 
@@ -11,4 +13,8 @@ group :assets do
   gem 'sass-rails'
   gem 'therubyracer', :platforms => :ruby
   gem 'uglifier'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
 end

@@ -2,8 +2,6 @@
 
 Installs the image_host application and runs it using nginx.
 
-TODO: Install imagemagick with your package manager.
-
 TODO: Ruby
 
 TODO: nginx + passenger

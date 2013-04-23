@@ -1,0 +1,8 @@
+%h1 New image
+%section.new-image
+  = form_tag images_path, multipart: true do
+    %p
+      = label_tag :image_file, 'Image:'
+      = file_field_tag :image_file
+    %p
+      = submit_tag 'Upload'
