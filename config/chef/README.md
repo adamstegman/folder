@@ -1,3 +1,3 @@
-# image_host chef
+# folder chef
 
-Contains the cookbook for setting up image_host.
+Contains the cookbook for setting up folder.

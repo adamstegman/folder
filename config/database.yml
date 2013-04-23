@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: image_host_development
+  database: folder_development
   pool: 5
   username:
   password:
@@ -26,7 +26,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: image_host_test
+  database: folder_test
   pool: 5
   username:
   password:

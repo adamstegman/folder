@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ImageHost::Application.load_tasks
+Folder::Application.load_tasks

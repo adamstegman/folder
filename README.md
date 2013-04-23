@@ -1,6 +1,6 @@
-# Image Host
+# Folder
 
-A very simple, very insecure image host for internal usage.
+A very simple, very insecure image and file host for internal usage.
 
 ## Usage
 
@@ -15,7 +15,7 @@ TODO: document all parameters
 
 Download the source code and run the installer.
 
-    cd image_host
+    cd folder
     script/install
 
 This will install Chef and run the embedded cookbook to install the application to the default location with default configuration.

@@ -1,18 +1,14 @@
-# image_host cookbook
+# folder cookbook
 
-Installs the image_host application and runs it using nginx.
+Installs the folder application and runs it using Unicorn.
 
-TODO: Ruby
-
-TODO: nginx + passenger
+TODO: application_ruby
 
 # Requirements
 
-A package manager with access to nginx.
-
 # Usage
 
-Put image_host on your run list.
+Put `recipe[folder]` on your run list.
 
 # Attributes
 

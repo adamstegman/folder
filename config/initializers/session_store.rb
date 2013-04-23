@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-ImageHost::Application.config.session_store :cookie_store, key: '_image_host_session'
+Folder::Application.config.session_store :cookie_store, key: '_folder_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# ImageHost::Application.config.session_store :active_record_store
+# Folder::Application.config.session_store :active_record_store
