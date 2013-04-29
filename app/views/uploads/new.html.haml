@@ -1,0 +1,8 @@
+%h1 Upload new file
+%section.file.file-new
+  = form_tag uploads_path, multipart: true do
+    %p
+      = label_tag :upload, 'Upload:'
+      = file_field_tag :upload
+    %p
+      = submit_tag 'Upload'

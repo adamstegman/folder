@@ -4,11 +4,11 @@ A very simple, very insecure image and file host for internal usage.
 
 ## Usage
 
-Upload an image at `/images/new` or using the REST API.
-Max image size of 10 MB? Store using flat files and let nginx throw those at the user agent.
+Upload an file at `/uploads/new` or using the REST API.
+TODO: Max file size of 10 MB? Store using flat files and let the server throw those at the user agent.
 
-View the image at `/images/:id`.
-Query parameters can resize the image: `/images/:id?width=350`.
+View the file at `/uploads/:id`.
+TODO: Query parameters can resize an image: `/uploads/:id?width=350`.
 TODO: document all parameters
 
 ## Setup

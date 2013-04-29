@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe ImagesController do
+describe UploadsController do
   describe 'GET "index"' do
     it 'returns http success' do
       get :index
@@ -12,6 +12,10 @@ describe ImagesController do
 
   describe 'GET "show"' do
     it 'returns http success' do
+      # FIXME
+    end
+
+    it 'renders the show_image template if the file is an image' do
       # FIXME
     end
   end
@@ -30,7 +34,7 @@ describe ImagesController do
   end
 
   describe 'POST "create"' do
-    it 'creates a new image' do
+    it 'creates a new upload' do
       # FIXME
     end
   end

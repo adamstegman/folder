@@ -1,4 +1,4 @@
 # coding: UTF-8
 
-module ImagesHelper
+module UploadsHelper
 end
