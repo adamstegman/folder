@@ -10,9 +10,13 @@ class FileUploader < CarrierWave::Uploader::Base
     'assets'
   end
 
+  def folder_id
+    @folder_id ||= SecureRandom.hex
+  end
+
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   def filename
-    @_filename ||= SecureRandom.hex
+    "#{folder_id}#{File.extname(super)}"
   end
 end

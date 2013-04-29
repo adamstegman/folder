@@ -7,6 +7,9 @@ class UploadsController < ApplicationController
   def show
     # TODO: retrieve metadata like content type and dimensions
     @file = Upload.find(params[:id])
+    unless @file
+      raise ActionController::RoutingError.new(params[:id])
+    end
     if @file.image?
       render 'show_image'
     else
@@ -27,6 +30,6 @@ class UploadsController < ApplicationController
     # TODO: handle empty file
     uploader = FileUploader.new
     uploader.store!(params[:upload])
-    redirect_to upload_path(uploader.filename)
+    redirect_to upload_path(uploader.folder_id)
   end
 end

@@ -1,11 +1,9 @@
 # coding: UTF-8
 
 # Public: An uploaded file and its metadata.
-class Upload
+Upload = Struct.new(:filename) do
   # Internal: The path in which files are stored.
   UPLOAD_DIR = FileUploader.new.store_dir.freeze
-
-  attr_accessor :filename
 
   # Public: Returns whether or not the file is an image.
   def image?
@@ -17,12 +15,11 @@ class Upload
     File.join(UPLOAD_DIR, filename)
   end
 
-  def initialize(filename)
-    self.filename = filename
-  end
-
-  def self.find(filename)
-    self.new(filename)
-    # TODO: throw exception when not found, like AR
+  def self.find(id)
+    file = nil
+    FileUtils.chdir File.join('public', UPLOAD_DIR) do
+      file = Dir["#{id}.*"].first
+    end
+    self.new(file) if file
   end
 end
