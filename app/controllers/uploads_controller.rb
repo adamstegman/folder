@@ -13,7 +13,7 @@ class UploadsController < ApplicationController
     if @file.image?
       render 'show_image'
     else
-      # TODO
+      render 'show_file'
     end
   end
 
