@@ -1,3 +1,8 @@
 site :opscode
 
 metadata
+
+cookbook 'postgresql'
+
+# Temporary until COOK-2806 is merged or I switch to Unicorn
+cookbook 'application_ruby', git: 'https://github.com/adamstegman/application_ruby.git', branch: 'passenger_apache2_default'

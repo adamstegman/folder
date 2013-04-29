@@ -19,3 +19,12 @@ Download the source code and run the installer.
     script/install
 
 This will install Chef and run the embedded cookbook to install the application to the default location with default configuration.
+
+## Development
+
+Make sure to update the cookbook in `config/chef` when you alter configuration or introduce a non-gem dependency.
+
+Postgres is the default database adapter, so install it and `rake db:setup` before running the server.
+
+Change into the `config/chef` directory and `vagrant up` to set up the application in a Vagrant VM.
+The site will be available at [http://localhost:8080/](http://localhost:8080/).

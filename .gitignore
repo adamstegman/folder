@@ -14,4 +14,8 @@
 /log/*.log
 /tmp
 
+# Ignore precompiled assets
 /public/assets
+
+# Ignore Vagrant config
+/config/chef/.vagrant
