@@ -4,5 +4,5 @@ metadata
 
 cookbook 'postgresql'
 
-# Temporary until COOK-2806 is merged or I switch to Unicorn
-cookbook 'application_ruby', git: 'https://github.com/adamstegman/application_ruby.git', branch: 'passenger_apache2_default'
+# Temporary until 1.1.3 is released (see COOK-2806), or I switch to Unicorn
+cookbook 'application_ruby', git: 'https://github.com/opscode-cookbooks/application_ruby.git'
