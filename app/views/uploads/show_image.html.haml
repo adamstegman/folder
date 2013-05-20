@@ -1,3 +1,6 @@
 %article.file.file-image
   %h1= @file.filename
-  = image_tag @file.filename
+  - # TODO: display thumbnail version
+  = image_tag @file.path
+  = link_to 'Full Size', raw_upload_path(@file.id)
+  = link_to 'Download', download_upload_path(@file.id)

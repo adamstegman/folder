@@ -17,5 +17,8 @@
 # Ignore precompiled assets
 /public/assets
 
+# Ignore file uploads
+/public/file_uploads
+
 # Ignore Vagrant config
 /config/chef/.vagrant

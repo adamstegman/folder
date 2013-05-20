@@ -1,2 +1,4 @@
 %article.file
   %h1= @file.filename
+  = link_to 'Raw', raw_upload_path(@file.id)
+  = link_to 'Download', download_upload_path(@file.id)
